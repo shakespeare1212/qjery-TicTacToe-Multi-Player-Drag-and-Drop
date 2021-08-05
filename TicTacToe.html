@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>Tic Tac Toe (knots & Crosses)</title>
+<meta name="description" content="This is the client for Multi-player Tic Tac Toe">
+<meta name="author" content="James McLain">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="stylesTTT.css">
+<script src="gameRunnerClient.js"></script>
+
+
+
+</script>
+
+</head>
+<body>
+    <div id = "Title_Box"><H1>TIC TAC TOE</H1></div>
+	<div id = "Names">
+		<div class="Player_info" id="P1_info">
+		<div id = "player1_name" class="NamesAndScores">Tom</div><div id = "p1_your_turn" class="NamesAndScores">Your Turn: X</div>
+		</div>
+		<div class="Player_info"  id="P2_info">
+		<div id = "player2_name" class="NamesAndScores">Jane</div><div id = "p2_your_turn" class="NamesAndScores">Your Turn: </div>
+        </div>
+		
+	</div>
+<div id="play_field" class="game">
+<div id="x-on-deck">	
+	<div id="X01" ><img src="x.png" class = "X-piece" alt="an X playing piece" draggable="true" ondragstart="drag(event)" ></div>
+	<div id="X02" ><img src="x.png" class = "X-piece" alt="an X playing piece" draggable="true" ondragstart="drag(event)" ></div>
+	<div id="X03" ><img src="x.png" class = "X-piece" alt="an X playing piece" draggable="true" ondragstart="drag(event)" ></div>
+	<div id="X04" ><img src="x.png" class = "X-piece" alt="an X playing piece" draggable="true" ondragstart="drag(event)" ></div>
+	<div id="X05" ><img src="x.png" class = "X-piece" alt="an X playing piece" draggable="true" ondragstart="drag(event)" ></div>
+	<div id="X06" ><img src="x.png" class = "X-piece" alt="an X playing piece" draggable="true" ondragstart="drag(event)" ></div>
+<!--End of x-on-deck div-->
+</div>
+
+<div id ="GameBoardImage"><img src="Game Board - TTT.png" alt="the game board image here"/>
+
+        <img id="r1c1" src="empty.png" alt="An X or an O will land here"  ondrop="drop(event)" ondragover="allowDrop(event)"/>
+		<img id="r1c2" src="empty.png" alt="An X or an O will land here"  ondrop="drop(event)" ondragover="allowDrop(event)"/>
+	    <img id="r1c3" src="empty.png" alt="An X or an O will land here"  ondrop="drop(event)" ondragover="allowDrop(event)"/>
+		<img id="r2c1" src="empty.png" alt="An X or an O will land here"  ondrop="drop(event)" ondragover="allowDrop(event)"/>
+		<img id="r2c2" src="empty.png" alt="An X or an O will land here"  ondrop="drop(event)" ondragover="allowDrop(event)"/>
+		<img id="r2c3" src="empty.png" alt="An X or an O will land here"  ondrop="drop(event)" ondragover="allowDrop(event)"/>
+		<img id="r3c1" src="empty.png" alt="An X or an O will land here"  ondrop="drop(event)" ondragover="allowDrop(event)"/>
+		<img id="r3c2" src="empty.png" alt="An X or an O will land here"  ondrop="drop(event)" ondragover="allowDrop(event)"/>
+		<img id="r3c3" src="empty.png" alt="An X or an O will land here"  ondrop="drop(event)" ondragover="allowDrop(event)"/>
+		
+<!--end of live_game_zone-->	
+</div>
+
+
+
+
+<div id="O-on-deck">	
+	<div id="O01" ><img src="O.png" class = "O-piece" alt="an O playing piece" draggable="true" ondragstart="drag(event)"  ></div>
+	<div id="O02" ><img src="O.png" class = "O-piece" alt="an O playing piece" draggable="true" ondragstart="drag(event)"  ></div>
+	<div id="O03" ><img src="O.png" class = "O-piece" alt="an O playing piece" draggable="true" ondragstart="drag(event)"  ></div>
+	<div id="O04" ><img src="O.png" class = "O-piece" alt="an O playing piece" draggable="true" ondragstart="drag(event)"  ></div>
+	<div id="O05" ><img src="O.png" class = "O-piece" alt="an O playing piece" draggable="true" ondragstart="drag(event)"  ></div>
+	<div id="O06" ><img src="O.png" class = "O-piece" alt="an O playing piece" draggable="true" ondragstart="drag(event)"  ></div>
+<!--End of x-on-deck div-->
+</div>
+</div>
+
+<!--End of play-field div-->
+</div> 
+
+<div id="Test console">
+<input class="TestControls" type="button" onclick="placeO()" value='Cick for O' id="placeObtn"> </input>
+<input class="TestControls" type="text" id="Oslot"></input>
+
+<input class="TestControls" type="button" onclick="placeX()" value='Cick for X' id="placeXbtn"  ></input>
+<input class="TestControls" type="text" id=Xslot></input>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <title>Jigsaw Puzzle using JQuery UI Drap & Drop</title>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="jquery-ui.min.js">   </script>
+        <link rel="stylesheet" href="jquery-ui.min.css"/>
+        <link rel="stylesheet" href="style-main.css"/></head>
+      <script src="script.js"></script>
+    </head>  
+    <body>
+        <div id="container">
+
+            <div id="top-left"></div>
+            <div id="server-status" class="serverDisplay">Opening Server Channel</div>
+            <div id="top-right"></div>
+               
+            
+            <div id="O_pieces_start" > 
+            <div id="O1" class="peices opieces" ></div> 
+            <div id="O2" class="peices opieces" ></div> 
+            <div id="O3" class="peices opieces" ></div> 
+            <div id="O4" class="peices opieces" ></div> 
+            <div id="O5" class="peices opieces" ></div> 
+            <div id="O6" class="peices opieces" ></div> 
+            </div> <!--end  O_pieces_start-->
+            
+            <div id="gameContainer"> 
+                <div id='slot1' class = "dropZone pieceHolder"></div>
+                <div id='slot2' class = "dropZone pieceHolder"></div>
+                <div id='slot3' class = "dropZone pieceHolder"></div>
+                <div id='slot4' class = "dropZone pieceHolder"></div>
+                <div id='slot5' class = "dropZone pieceHolder"></div>
+                <div id='slot6' class = "dropZone pieceHolder"></div>
+                <div id='slot7' class = "dropZone pieceHolder"></div>
+                <div id='slot8' class = "dropZone pieceHolder"></div>
+                <div id='slot9' class = "dropZone pieceHolder"></div>
+            </div> <!--end "gameContainer"-->             
+            <div id="slashes">
+            <div id="winSlash" class = "winHorizontal">a</div>
+                <div id="winSlash2" class = "winVerticale"></div>
+                <div id="winSlash3" class = "winDiagLR">   </div>
+                <div id="winSlash4" class = "winDiagRL">   </div>
+
+            </div>
+            
+            <div id="X_pieces_start">
+            <div id="X1" class="peices xpieces" ></div> 
+            <div id="X2" class="peices xpieces" ></div> 
+            <div id="X3" class="peices xpieces" ></div> 
+            <div id="X4" class="peices xpieces" ></div> 
+            <div id="X5" class="peices xpieces" ></div> 
+            <div id="X6" class="peices xpieces" ></div> 
+                    
+            </div> <!--end  X_pieces_start-->
+
+
+        </div> <!--end "container"-->
+        <ul id="buttons">
+            <li>
+                <button id="btnStart" >Start</button>
+            </li>
+            <li>
+                <button id="btnReset" >Reset</button>
+            </li>
+        </ul>
+    </body>
+
+
+    </head>
