@@ -1,69 +1,72 @@
-<!DOCTYPE html>
-    <head>
-        <title>Jigsaw Puzzle using JQuery UI Drap & Drop</title>
-        <script src="jquery-3.6.0.min.js"></script>
-        <script src="jquery-ui.min.js">   </script>
-        <link rel="stylesheet" href="jquery-ui.min.css"/>
-        <link rel="stylesheet" href="style-main.css"/></head>
-      <script src="script.js"></script>
-    </head>  
-    <body>
-        <div id="container">
+<html>
 
-            <div id="top-left"></div>
-            <div id="server-status" class="serverDisplay">Opening Server Channel</div>
-            <div id="top-right"></div>
-               
-            
-            <div id="O_pieces_start" > 
-            <div id="O1" class="peices opieces" ></div> 
-            <div id="O2" class="peices opieces" ></div> 
-            <div id="O3" class="peices opieces" ></div> 
-            <div id="O4" class="peices opieces" ></div> 
-            <div id="O5" class="peices opieces" ></div> 
-            <div id="O6" class="peices opieces" ></div> 
-            </div> <!--end  O_pieces_start-->
-            
-            <div id="gameContainer"> 
-                <div id='slot1' class = "dropZone pieceHolder"></div>
-                <div id='slot2' class = "dropZone pieceHolder"></div>
-                <div id='slot3' class = "dropZone pieceHolder"></div>
-                <div id='slot4' class = "dropZone pieceHolder"></div>
-                <div id='slot5' class = "dropZone pieceHolder"></div>
-                <div id='slot6' class = "dropZone pieceHolder"></div>
-                <div id='slot7' class = "dropZone pieceHolder"></div>
-                <div id='slot8' class = "dropZone pieceHolder"></div>
-                <div id='slot9' class = "dropZone pieceHolder"></div>
-            </div> <!--end "gameContainer"-->             
-            <div id="slashes">
-            <div id="winSlash" class = "winHorizontal">a</div>
-                <div id="winSlash2" class = "winVerticale"></div>
-                <div id="winSlash3" class = "winDiagLR">   </div>
-                <div id="winSlash4" class = "winDiagRL">   </div>
+<head>
+    <title>Tic Tac Toe - Drag and Drop</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script1.js"></script>
+    <script src="script-score-n-win.js"></script>
+    
+</head>
 
-            </div>
-            
-            <div id="X_pieces_start">
-            <div id="X1" class="peices xpieces" ></div> 
-            <div id="X2" class="peices xpieces" ></div> 
-            <div id="X3" class="peices xpieces" ></div> 
-            <div id="X4" class="peices xpieces" ></div> 
-            <div id="X5" class="peices xpieces" ></div> 
-            <div id="X6" class="peices xpieces" ></div> 
-                    
-            </div> <!--end  X_pieces_start-->
+<body>
+<div id="info-header" class="header">
+    <div id="left-player-info">Player1</div>
+    <div id="server-info">Server - No Connection</div>
+    <div id="right-player-info">Player2</div>
+</div>
 
 
-        </div> <!--end "container"-->
-        <ul id="buttons">
-            <li>
-                <button id="btnStart" >Start</button>
-            </li>
-            <li>
-                <button id="btnReset" >Reset</button>
-            </li>
-        </ul>
-    </body>
+<div id="container-mg" class="background">    
+
+    <div id="start1" class="startZone">    
+        <div id="x1" class="xpieces"></div>
+        <div id="x2" class="xpieces"></div>
+        <div id="x3" class="xpieces"></div>
+        <div id="x4" class="xpieces"></div>
+        <div id="x5" class="xpieces"></div>
+    </div>
 
 
-    </head>
+
+<div id="game" class="gameZone">
+    <div id="slot1" class="pieceHolder droppableSpace"></div>
+    <div id="slot2" class="pieceHolder droppableSpace"></div>
+    <div id="slot3" class="pieceHolder droppableSpace"></div>
+    <div id="slot4" class="pieceHolder droppableSpace"></div>
+    <div id="slot5" class="pieceHolder droppableSpace"></div>
+    <div id="slot6" class="pieceHolder droppableSpace"></div>
+    <div id="slot7" class="pieceHolder droppableSpace"></div>
+    <div id="slot8" class="pieceHolder droppableSpace"></div>
+    <div id="slot9" class="pieceHolder droppableSpace"></div>
+    <!-- slashes styled to invisible until a win happens
+        then they should apear over the approriate row, col, or diag 
+    /-->
+
+    <img id="winSlash" src="winSlashRed.png" class="winSlashHidden"></img>
+    <img id="winnerBox" src="Xwins.png" class="winIsUnknown">    </img>
+    <img id="winnerCat" src="cat-game.gif" class="winIsUnknown">    </img>
+    
+</div>
+
+<div id="start2" class="startZone">    
+    <div id="o1" class="opieces"></div>
+    <div id="o2" class="opieces"></div>
+    <div id="o3" class="opieces"></div>
+    <div id="o4" class="opieces"></div>
+    <div id="o5" class="opieces"></div>
+</div>
+</div> <!-- end of main game container, holding game board and piece bins -->
+<div id="test controls">
+<textarea id="gameID"></textarea>
+<textarea id="slot">4</textarea>
+<button id="movePieceX">MOVE X</button>
+<button id="movePieceO">MOVE O</button>
+<textarea id="outPut">gamestate</textarea>
+<textarea id="thePoop">gamestate</textarea>
+</div>
+
+</body>
+</head>

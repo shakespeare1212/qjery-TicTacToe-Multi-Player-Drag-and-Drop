@@ -1,0 +1,212 @@
+#info-header
+{
+    display :grid;
+    height:42px;
+    max-height: 42px;
+    grid-template-columns: 120px 340px 120px;
+    grid-template-rows: 40px;
+    margin: 8px;
+    
+    
+}
+
+#left-player-info
+{
+   display: grid;   
+   height: 40px;
+   width:  119px;
+   border-radius: 3px;
+   text-align: center;
+   line-height: 80%;
+  
+}
+
+#server-info
+{
+  display: grid;
+  height: 40px; 
+
+  border: 1px solid cornflowerblue;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  line-height: 2.5;
+ 
+}
+
+#right-player-info
+{
+  display: grid;
+  height: 40px;   
+  width: 119px;
+  border-radius: 3px;
+  line-height: 80%;
+  text-align: center;
+ 
+}
+
+#container-mg
+{
+    display :grid;
+    margin-top: 50px;
+    grid-template-columns: 120px 340px 120px;
+    grid-template-rows:    420;
+    align-content: center;
+
+
+}
+
+#start1
+{
+    display: grid;
+    position: relative;
+    padding: 10px;
+    grid-template-columns: 103px; 
+    grid-template-rows:  103px 103px 103px 103px 103px;
+
+}
+
+
+.gameZone
+{
+    border: black;
+    display: grid;
+    position: relative;
+    margin-left: 20px;
+    height: 310px;
+    width: 310px;
+    background-color: aquamarine;
+    grid-template-columns: 103px 103px 103px;
+    grid-template-rows:    103px 103px 103px;
+    
+}
+
+#start2
+{
+    border: black;
+    display: grid;
+    position: relative;
+    padding: 10px;
+    grid-template-columns: 103px;
+    grid-template-rows:  103px 103px 103px 103px 103px;
+
+}
+
+.xpieces
+{
+  display: grid;
+  background-image: url("X-big.png");
+  height: 100px;
+  width: 100px;
+  z-index: 15;
+}
+
+.opieces
+{
+  display: grid;
+  background-image: url("O-big.png");
+  height: 100px;
+  width: 100px;
+  z-index: 15;
+}
+
+
+#slot1{
+  
+  border-right: 2pt solid black;
+  border-bottom: 2pt solid black;
+}
+
+#slot2{
+  
+  border-left: 2pt solid black;
+  border-right: 2pt solid black;
+  border-bottom: 2pt solid black;
+}
+#slot3{
+  
+  border-left: 2pt solid black;
+  border-bottom: 2pt solid black;
+}
+#slot4{
+  
+  border-right: 2pt solid black;
+  border-top: 2pt solid black;
+  border-bottom: 2pt solid black;
+}
+#slot5{
+  
+  border: 2pt solid black;
+}
+#slot6{
+    
+  border-top: 2pt solid black;
+  border-left: 2pt solid black;
+  border-bottom: 2pt solid black;
+}
+#slot7{
+  
+  border-top: 2pt solid black;
+  border-right: 2pt solid black;
+}
+#slot8{
+  
+  border-top: 2pt solid black;
+  border-left: 2pt solid black;
+  border-right: 2pt solid black;
+}
+
+#slot9{
+  
+  border-left: 2pt solid black;
+  border-top: 2pt solid black;
+}
+
+
+
+
+
+
+.winSlashHidden
+{
+  display : none;
+}
+
+.winIsUnknown
+{
+  display: none;
+}
+
+
+.winnerShow
+
+{
+  display : block;
+  position: absolute;
+  top : 118px;
+  left: 85px;
+  z-index: 24;
+}
+
+.showCatWin
+{
+  display : block;
+  position: absolute;
+  top : 30px;
+  left: 5px;
+  z-index: 24;
+}
+.winSlashActive
+{
+  display : block; 
+  z-index : 20;
+  position:absolute;
+  top: 46px;
+  left: 7px;
+}
+
+
+#thePoop{
+  height: 80px;
+  width:  120px;
+}
